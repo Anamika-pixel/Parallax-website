@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Website</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Dancing+Script:wght@400..700&family=Grey+Qo&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Playwrite+AR:wght@100..400&family=Playwrite+AT:ital,wght@0,100..400;1,100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section>
+        <img src="./img/first.jpg" alt="" id="first">
+        <img src="./img/last.png" alt="" id="last">
+        <h1 id="text">Photography</h1>
+    </section>
+
+    <div class="ab-text">
+        <div class="heading">
+            <h2>Photography</h2>
+            <p>As a freelance Designer & developer I am here to make you stand out in the digital world and <br> my passion for design and your vision will ensure a great end result .</p>
+        </div>
+        <div class="container">
+            <div class="boxx box1">
+                <div class="in">
+                </div>
+            </div>
+
+           
+            <div class="boxxx box2"></div>
+                <div class="in">
+                </div>
+            </div>
+
+            <div class="boxxxx box3"></div>
+                <div class="in">
+                </div>
+            </div>
+
+            <div class="boxxxxx box4"></div>
+                <div class="in">
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="bottom">
+        </div>
+
+
+    </div>
+
+    <h2 id="headi">About Photography</h2>
+    <div><p id="para">Photography is the art and science of capturing images using light. It combines technical skills, such as understanding exposure, composition, and lighting, with creative expression to convey emotions and tell stories. Photographers use various equipment, from smartphones to professional cameras, and employ different techniques and styles, such as portrait, landscape, documentary, and abstract photography. <br><br>
+
+        The evolution of photography has been influenced by advancements in technology, from film to digital, leading to new possibilities in editing and sharing images. Photography plays a significant role in media, culture, and personal expression, allowing individuals to document moments, explore artistic visions, and communicate ideas visually. Whether for professional purposes or personal enjoyment, photography remains a powerful medium that captures the world around us. <br><br>
+    
+Photography is both an artistic endeavor and a technical discipline that has evolved significantly since its inception in the early 19th century. It involves capturing light to create images, using a variety of equipment, including cameras, lenses, and lighting tools. <br><br>Photography plays a crucial role in media, advertising, and social documentation. It shapes public perception and memory, influencing everything from news reporting to social media trends. Photographers often serve as visual storytellers, capturing pivotal moments and everyday life, thereby preserving history and culture.<br><br>Digital photography has revolutionized the field, making it more accessible than ever. With advancements in camera technology, including high-resolution sensors and smartphone cameras, nearly everyone can engage in photography. Editing software like Adobe Photoshop and Lightroom allows for post-processing enhancements, enabling photographers to refine their images creatively. <br><br>photography is a dynamic blend of art, technology, and communication. It continues to evolve, reflecting changes in society and advancements in technology, while remaining a vital means of expression and connection in our lives. Whether through personal snapshots or powerful visual narratives, photography helps us interpret and understand the world around us.
+
+</p></div>
+<div style="color: white;display: flex;    font-family: PT Serif, system-ui; justify-content: center;align-items: center;">&copy;Anamika V</div>
+
+    <script>
+
+        let first = document.getElementById("first");
+        let last = document.getElementById("last");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+
+            first.style.top = value * 0.7 + 'px';
+            last.style.bottom = value * 0.5 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,226 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", system-ui;
+}
+body{
+    min-height: 1600px;
+    background: #000;
+    overflow-x: hidden;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1400px;
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0%,rgba(0,0,0,0)50%,rgba(0,0,0,0.3)80%, #000 100%);
+    z-index: 100000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#last{
+    z-index: 10;
+}
+#text{
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: 5em;
+    text-align: center;
+    padding-top: 205px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    font-family: "PT Serif", system-ui;
+}
+.ab-text{
+    padding: 100px 20%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 40px;
+    color: white;
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+}
+.heading p{
+    color: #9bacc4;
+    font-size: 15px;
+    line-height: 28px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,auto));
+    grid-gap: 1.7rem;
+    align-items: center;
+    margin-top: 5rem;
+}
+.boxx{
+    height: 240px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boxxx{
+    height: 240px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -90px;
+}
+.boxxxx{
+    height: 240px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 440px;
+    margin-top: -240px;
+}
+.boxxxxx{
+    height: 240px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: gray;
+    transition: all 0.8s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 960px;
+    margin-top: -360px;
+}
+.box1{
+    background: linear-gradient(to bottom , rgba(0,0,0,0)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,0.7)75%, #000 100%),url(./img/01.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box1:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box2{
+    background: linear-gradient(to bottom , rgba(0,0,0,0)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,0.7)75%, #000 100%),url(./img/02.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box2:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box3{
+    background: linear-gradient(to bottom , rgba(0,0,0,0)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,0.7)75%, #000 100%),url(./img/03.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box3:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+.box4{
+    background: linear-gradient(to bottom , rgba(0,0,0,0)0%,rgba(0,0,0,0.3)50%,rgba(0,0,0,0.7)75%, #000 100%),url(./img/04.jpg) center center no-repeat;
+    background-size: cover;
+    margin-top: -340px;
+}
+.box4:hover{
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+    opacity: 0.6;
+}
+#para{
+    color: white;
+    font-size: 20px;
+    font-family: "PT Serif", system-ui;
+    height: 700px;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: 10%;
+    text-align: justify;
+}
+#headi:hover{
+    color: yellow;
+}
+#headi{
+    color: white;
+    margin-top: 20px;
+    margin-left: 45%;
+}
+
+
+
+@media (max-width: 480px){
+    html,body{
+        height: 100vh;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    #first{
+        width: 1000px;
+        height: 100%;
+    }
+    #last{
+        width: 100%;
+        height: 100%;
+    }
+    .box1{
+        margin-left: 10px;
+    }
+    .box2{
+        margin-left: 10px;
+    }
+    .box3{
+        margin-top: 0px;
+        margin-left: 10px;
+    }
+    .box4{
+        margin-top: -70px;
+        margin-left: 80px;
+    }
+    #headi{
+        margin-top: 40px;
+        margin-left: 100px;
+    }
+    #text{
+        font-size: 1.5em;
+    }
+}
